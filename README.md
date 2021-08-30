@@ -1,15 +1,13 @@
 # TechBlogMVC
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation-instructions)
-* [Usage Information](#usage-information)
 * [Questions](#questions)
     
 ## Description
 
-This application is the back-end for an E-commerce website. 
-Uses:Sequelize ORM, MySQL, Express.js, Dotenv
+Technologies used: Sequelize, MySQL, Express, Dotenv, bcrypt, express.handlebars, express-session
 
+<img src="assets\images\Capture.PNG"/>
 
 User Story:
 AS A developer who writes about tech
@@ -49,20 +47,6 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
-
-
-## Installation Instructions
-Installations required: MySql, Node
-Clone repo
-Open terminal in root directory and install npm packages "npm install" 
-
-
-## Usage Information
-Navigate to .env file, and add your mySQL login information
-Initialize application “npm start”
-
-<img src="assets\images\Capture.PNG"/>
-<img src="assets\images\Capture2.PNG"/>
 
 ## Questions
 <p>Contact Me</p>
