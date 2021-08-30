@@ -1,0 +1,18 @@
+<div class="row">
+  <article class="postInfo">
+
+    <div class="mb-3 col-12">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body post">
+          <h4>{{title}}</h4>
+          <p>{{postContent}}</p>
+          <div class="userDateTag">
+            Posted by {{user.username}} on {{format_date created_at}}
+          </div>
+          <a class="btn btn-light" href="/post/{{id}}" class="edit-link">Comment(s): {{comments.length}}</a>
+        </div>
+      </div>
+    </div>
+</div>
+</article>
+</div>

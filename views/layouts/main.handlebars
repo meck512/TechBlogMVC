@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE Tech Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="container-fluid p-3 mb-2 bg-secondary text-white">
+    <header>
+
+      <div class="p-3 mb-2 bg-dark text-white">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="btn btn-primary btn-lg me-2" href="/">THE Tech Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light btn-lg me-2" href="/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-light btn-lg me-2" href="/">Home</a>
+            </li>
+            {{#if loggedIn}}
+            <li class="nav-item">
+              <a class="nav-link btn btn-light btn-lg me-2" id="logout">Logout</a>
+              {{else}}
+              <a class="nav-link btn btn-light btn-lg me-2" href="/login">Login</a>
+            </li>
+            {{/if}}
+          </ul>
+        </nav>
+      </div>
+
+
+
+    </header>
+    <div class="container">
+      <div class="row">
+        {{{ body }}}
+      </div>
+    </div>
+    </main>
+
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
